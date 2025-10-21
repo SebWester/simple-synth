@@ -1,9 +1,9 @@
-# ---- Byggkataloger ----
+# ---- Build ----
 build/
 build-*/
 cmake-build-*/
 
-# ---- CMake temporära filer ----
+# ---- CMake temp files ----
 CMakeCache.txt
 CMakeFiles/
 CMakeScripts/
@@ -13,7 +13,7 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 
-# ---- Binärer och objektfiler ----
+# ---- Binarys ----
 *.o
 *.obj
 *.so
@@ -25,12 +25,12 @@ compile_commands.json
 *.lib
 *.pdb
 
-# ---- Loggar och temporära filer ----
+# ---- Logs och temps ----
 *.log
 *.tmp
 *.swp
 
-# ---- IDE-filer ----
+# ---- IDE ----
 # VS Code
 .vscode/
 # CLion / JetBrains
@@ -39,7 +39,6 @@ compile_commands.json
 *.xcworkspace
 *.xcodeproj
 
-# ---- Systemfiler ----
 .DS_Store
 Thumbs.db
 
