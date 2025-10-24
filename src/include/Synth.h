@@ -18,6 +18,7 @@ class Synth {
         void setGainLevel(float l);
         // Distortion
         void toggleDist();
+        void setDistThreshold(float t);
         
     private:
         std::unique_ptr<Oscillator> osc;
