@@ -10,6 +10,15 @@ class Synth {
     public:
         Synth();
         float process(float t);
+
+        // Oscillator
+        void changeWaveform(const std::string& newWave);
+        void changeFrequency(float fq);
+        // Gain
+        void setGainLevel(float l);
+        // Distortion
+        void toggleDist();
+        
     private:
         std::unique_ptr<Oscillator> osc;
         std::unique_ptr<Gain> gain;
