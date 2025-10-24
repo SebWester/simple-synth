@@ -4,10 +4,12 @@
 class Distortion {
     public:
         void toggleDist();
+        void setThreshold(float t);
         float clipSignal(float input);
 
     private:
         bool distActive = false;
+        float threshold = 0.3f;
 };
 
 #endif
