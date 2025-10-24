@@ -34,3 +34,7 @@ void Synth::toggleDist() {
   dist->toggleDist();
 }
 
+void Synth::setDistThreshold(float t) {
+  dist->setThreshold(t);
+};
+
