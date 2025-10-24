@@ -1,5 +1,7 @@
 #include "../include/Synth.h"
 #include <memory>
+#include <string>
+#include <iostream>
 
 Synth::Synth()
     : osc(std::make_unique<Oscillator>()),
@@ -14,3 +16,21 @@ float Synth::process(float t) {
 
   return sample;
 }
+
+
+void Synth::changeWaveform(const std::string& newWave) {
+  osc->setWaveform(newWave);
+}
+
+void Synth::changeFrequency(float fq) {
+  osc->setFrequency(fq);
+}
+
+void Synth::setGainLevel(float l) {
+  gain->setLevel(l);
+}
+
+void Synth::toggleDist() {
+  dist->toggleDist();
+}
+

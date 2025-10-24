@@ -17,5 +17,7 @@ int main() {
         std::cout << "Sample: " << sample << std::endl;
     }
 
+    synth.toggleDist();
+
     return 0;
 }
